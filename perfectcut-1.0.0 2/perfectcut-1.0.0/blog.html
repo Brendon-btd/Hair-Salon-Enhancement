@@ -26,6 +26,7 @@
       <!-- Tweaks for older IEs-->
       <!DOCTYPE html>
 <html lang="en">
+
    <head>
       <!-- basic -->
       <meta charset="utf-8">
@@ -65,6 +66,14 @@
         .bg-pink {
             background-color: #ff69b4;
         }
+        .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(239, 80, 218, 0.2);
+    transition: all 0.3s ease;
+  }
+  .body {
+   background-color:#ff69b4;
+  }
     </style>
    </head>
    <body>
@@ -106,9 +115,7 @@
       <!-- New carousel section start by Nontokozo -->
        <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
   <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="images/client-bg.png" class="d-block w-100" alt="Client image">
-    </div>
+    
     <div class="carousel-item">
       <img src="images/img-3.png" class="d-block w-100" alt="Us Cutting Hair">
     </div>
@@ -128,18 +135,52 @@
 
 <!--New carousel section end by Nontokozo -->
 
-<!--New blog section start by Nontokozo -->
+<!--New blog section start by Palesa -->
+
 
 <h1 class="blog_taital">Our Blog</h1>
-<div class="card" style="width: auto;">
-    <img src="images/blog-img.png" class="card-img-top" alt="Image of the Store">
-  <div class="card-body">
-    <h5 class="card-title">Good Hair Style</h5>
-    <p class="card-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using LoremIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem</p>
-    <a href="#" class="btn btn-primary">Read More</a>
-  </div>
-</div>
-<!--New blog section end by Nontokozo -->
+
+<div class="d-flex justify-content-center align-items-center min-vh-100 bg-light">
+   <div class="card shadow" style="max-width: 900px; margin: 20px;">
+     <img src="images/Hair care routine.png" class="card-img-top" alt="Image of the Store">
+     <div class="card-body">
+       <h5 class="card-title">How to Achieve Healthy, Beautiful Hair on Wash Day</h5>
+       <p class="card-text">
+         Wash day isn’t just about scrubbing your scalp—it’s a full-on spa day for your hair (minus the cucumber water).
+         Start by giving your scalp some love with a quick massage, lather up with the right shampoo (your ends don’t need soap opera drama, just your scalp does), 
+         then slather on conditioner like it’s liquid gold.
+         Rinse with cool water for that shiny-hair moment, blot gently with a T-shirt instead of wrestling with a towel, and lock in moisture with a leave-in.
+         Bonus points if you skip frying your strands with heat tools—your hair will thank you by looking fabulous instead of frazzled.
+       </p>
+       <a href="about.html" class="btn btn-primary">Read More</a>
+     </div>
+   </div>
+ </div>
+ <div class="d-flex justify-content-center align-items-center min-vh-100 bg-light">
+   <div class="card shadow" style="max-width: 900px; margin: 20px;">
+     <div class="row g-0">
+       <!-- Image section -->
+       <div class="col-md-4">
+         <img src="images/Dos&Donts.jpg" class="img-fluid rounded-start" alt="Image of the Store">
+       </div>
+       <!-- Text section -->
+       <div class="col-md-8">
+         <div class="card-body">
+           <h5 class="card-title">How to Achieve Healthy, Beautiful Hair on Wash Day</h5>
+           <p class="card-text">
+            When it comes to hair products, a few do’s and don’ts go a long way. Do use the right products for your hair type—your curls don’t want the same stuff as your bestie’s poker-straight locks.
+             Do layer lightly (a pea-sized amount of serum is not a suggestion, it’s a rule). Don’t go wild with heavy oils unless you’re into the “haven’t-showered-in-a-week” aesthetic, 
+             and definitely don’t skip a heat protectant unless crispy, fried ends are your thing.
+             Basically: treat your hair products like seasoning—enough to enhance, not drown out.
+           </p>
+           <a href="about.html" class="btn btn-primary">Read More</a>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+ 
+<!--New blog section end by Palesa -->
       <!-- footer section start -->
       <div class="footer_section layout_padding">
          <div class="container">
@@ -215,84 +256,6 @@
       <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
    </head>
    <body>
-     
-      <!-- blog section start -->
-      <div class="blog_section layout_padding">
-         <div class="container">
-            <h1 class="blog_taital">Our Blog</h1>
-            <div class="blog_box">
-               <div class="blog_box_left">
-                  <div class="hover01 column">
-                     <figure><img src="images/blog-img.png"></figure>
-                  </div>
-               </div>
-               <div class="blog_box_right">
-                  <h2 class="good_text">Good Hair Style</h2>
-                  <p class="post_text">Post by: Hair <span class="date_text">31 March</span></p>
-                  <p class="lorem_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using LoremIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem</p>
-                  <div class="read_bt_1"><a href="#!">Read More</a></div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- blog section end -->
-      <!-- footer section start -->
-      <div class="footer_section layout_padding">
-         <div class="container">
-            <div class="row">
-               <div class="col-lg-3 col-sm-6">
-                  <h3 class="useful_text">About</h3>
-                  <p class="footer_text">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation u</p>
-               </div>
-               <div class="col-lg-3 col-sm-6">
-                  <h3 class="useful_text">Menu</h3>
-                  <div class="footer_menu">
-                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li class="active"><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                     </ul>
-                  </div>
-               </div>
-               <div class="col-lg-3 col-sm-6">
-                  <h1 class="useful_text">Useful Link</h1>
-                  <p class="dummy_text">Adipiscing Elit, sed do Eiusmod Tempor incididunt </p>
-               </div>
-               <div class="col-lg-3 col-sm-6">
-                  <h1 class="useful_text">Contact Us</h1>
-                  <div class="location_text">
-                     <ul>
-                        <li>
-                           <a href="#!">
-                           <i class="fa fa-map-marker" aria-hidden="true"></i><span class="padding_left_10">Address : Loram Ipusm</span>
-                           </a>
-                        </li>
-                        <li>
-                           <a href="#!">
-                           <i class="fa fa-phone" aria-hidden="true"></i><span class="padding_left_10">Call : +01 1234567890</span>
-                           </a>
-                        </li>
-                        <li>
-                           <a href="#!">
-                           <i class="fa fa-envelope" aria-hidden="true"></i><span class="padding_left_10">Email : demo@gmail.com</span>
-                           </a>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- footer section end -->
-      <!-- copyright section start -->
-      <div class="copyright_section">
-         <div class="container">
-            <p class="copyright_text">2020 All Rights Reserved. Design by <a href="https://html.design" target="_blank">Free html  Templates</a></p>
-         </div>
-      </div>
-      <!-- copyright section end -->
       <!-- Javascript files-->
       <script src="js/jquery.min.js"></script>
       <script src="js/popper.min.js"></script>
